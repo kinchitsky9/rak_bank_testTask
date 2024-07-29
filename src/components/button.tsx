@@ -23,6 +23,7 @@ const Button = ({
   return (
     <TouchableOpacity
       {...touchableOpacityProps}
+      testID="button"
       style={[styles.container, style, disabled && styles.disabled]}>
       <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>

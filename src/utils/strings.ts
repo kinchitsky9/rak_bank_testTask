@@ -1,13 +1,14 @@
 export const strings = {
   welcome: 'Welcome to RAK-bank',
   description:
-    'Answer a few questions about your investment preferences to determine your risk profile. This will help us guide you towards the best options for opening a bank account tailored to your needs.',
-  getStarted: 'Ready to get started?',
+    'Answer a few questions about your investment preferences to find out your risk profile. This will help us recommend the best options for opening a bank account that suits your needs.',
   begin: 'Begin',
-  tapStart: " Tap 'Start' to begin the questionnaire.",
-  yourScore: 'Your Risk Profile Score',
-  scoreDescription:
-    'Based on your answers, we’ve calculated your risk profile score. This score helps us understand your investment preferences and guide you to the best options for your bank account.',
-  thankYou: 'Thank you for completing the questionnaire!',
-  goToHome: 'Go to Home',
+  yourScore: 'Your Risk Score',
+  highRisk:
+    'You have a high-risk score, indicating a preference for bold and aggressive investment strategies. This suggests you’re comfortable with higher volatility in pursuit of greater returns. We’ll guide you to bank account options that align with your adventurous investment approach.',
+  mediumRisk:
+    'You have a medium-risk score, indicating a balanced approach to investing. You’re open to taking some risks for moderate returns while maintaining a level of security. We’ll recommend bank account options that match your balanced investment style.',
+  lowRisk:
+    'You have a low-risk score, showing a preference for conservative investment strategies. You prioritize stability and security, opting for lower returns in exchange for minimized risk. We’ll guide you to bank account options that suit your cautious investment approach.',
+  back: 'Back',
 };

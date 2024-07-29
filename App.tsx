@@ -10,15 +10,14 @@ import QuestionsScreen from './src/screens/questionsScreen';
 import ResultScreen from './src/screens/resultScreen';
 
 export type AppStackParams = {
-  Home: undefined;
-  Questions: undefined;
-  Result: {totalScore: number};
+  HomeScreen: undefined;
+  QuestionsScreen: undefined;
+  ResultScreen: {totalScore: number};
 };
 
 export type AppNavigationProps = StackNavigationProp<AppStackParams>;
 
 const Stack = createStackNavigator<AppStackParams>();
-
 const App = () => {
   return (
     <NavigationContainer>
@@ -26,9 +25,9 @@ const App = () => {
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Questions" component={QuestionsScreen} />
-        <Stack.Screen name="Result" component={ResultScreen} />
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen name="QuestionsScreen" component={QuestionsScreen} />
+        <Stack.Screen name="ResultScreen" component={ResultScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

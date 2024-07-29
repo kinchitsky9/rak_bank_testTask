@@ -109,17 +109,7 @@ const styles = StyleSheet.create({
 
     paddingVertical: 10,
   },
-  riskMeterContainer: {
-    height: 20,
-    width: '100%',
-    overflow: 'hidden',
-    borderRadius: 3,
-    alignItems: 'flex-end',
-  },
-  riskMeterImage: {
-    height: '100%',
-    width: '100%',
-  },
+
   questionContainer: {
     flex: 1,
     gap: 30,
@@ -142,20 +132,7 @@ const styles = StyleSheet.create({
   optionsContainer: {
     gap: 20,
   },
-  optionItem: {
-    flexDirection: 'row',
-    gap: 12,
-    alignItems: 'center',
-    borderColor: colors.primary,
-    borderWidth: 1.5,
-    padding: 15,
-    borderRadius: 8,
-  },
 
-  navigationButtonsContainer: {
-    flexDirection: 'row',
-    gap: 40,
-  },
   btnStyle: {
     backgroundColor: colors.primary,
   },

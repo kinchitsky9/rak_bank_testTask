@@ -103,11 +103,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     shadowRadius: 5,
   },
-  thankYouText: {
-    fontSize: 16,
-    fontWeight: '700',
-    color: colors.white,
-  },
+
   buttonContainer: {
     gap: 20,
   },

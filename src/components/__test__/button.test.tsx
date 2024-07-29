@@ -1,7 +1,7 @@
 // Button.test.js
 import React from 'react';
 import {fireEvent, render} from '@testing-library/react-native';
-import {Button} from 'react-native';
+import Button from '../Button/button';
 
 describe('<Button />', () => {
   it('renders with the correct title', () => {

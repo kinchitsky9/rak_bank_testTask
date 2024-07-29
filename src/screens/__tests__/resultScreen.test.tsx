@@ -2,7 +2,7 @@
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react-native';
 import {useNavigation, useRoute} from '@react-navigation/native';
-import ResultScreen from '../resultScreen';
+import ResultScreen from '../Result/resultScreen';
 import {strings} from '../../utils/strings';
 
 jest.mock('@react-navigation/native', () => ({

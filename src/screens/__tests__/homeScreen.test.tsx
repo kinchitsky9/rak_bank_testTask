@@ -1,7 +1,7 @@
 import React from 'react';
 import {render, fireEvent} from '@testing-library/react-native';
 import {useNavigation} from '@react-navigation/native';
-import HomeScreen from '../homeScreen';
+import HomeScreen from '../Home/homeScreen';
 import {strings} from '../../utils/strings';
 
 // Mock the useNavigation hook

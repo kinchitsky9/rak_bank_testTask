@@ -1,13 +1,12 @@
 import {
   StyleProp,
-  StyleSheet,
   Text,
   TouchableOpacity,
   TouchableOpacityProps,
   ViewStyle,
 } from 'react-native';
 import React from 'react';
-import {colors} from '../utils/colors';
+import {styles} from './styles';
 
 type buttonProps = {
   title: string;
@@ -31,22 +30,3 @@ const Button = ({
 };
 
 export default Button;
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: colors.primary,
-    borderRadius: 10,
-    paddingHorizontal: 40,
-    paddingVertical: 20,
-    alignItems: 'center',
-  },
-  disabled: {
-    backgroundColor: colors.gray,
-  },
-  title: {
-    color: colors.white,
-    fontSize: 16,
-    fontWeight: '900',
-    justifyContent: 'center',
-  },
-});

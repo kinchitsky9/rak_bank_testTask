@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from '@testing-library/react-native';
-import RadioContainer from '../radioContainer';
+import RadioContainer from '../RadioContainer/radioContainer';
 
 describe('<RadioContainer />', () => {
   it('renders option text correctly', () => {

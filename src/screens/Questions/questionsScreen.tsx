@@ -1,14 +1,13 @@
 import {Dimensions, SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import React, {useMemo, useState} from 'react';
-import Button from '../components/button';
-import {colors} from '../utils/colors';
-import {questionsData} from '../assets';
+import Button from '../../components/Button/button';
+import {colors} from '../../utils/colors';
+import {questionsData} from '../../assets';
 import {useNavigation} from '@react-navigation/native';
-import {AppNavigationProps} from '../../App';
-import {OptionType} from '../interface/appTypes';
-import RadioContainer from '../components/radioContainer';
-
-const {height} = Dimensions.get('window');
+import {AppNavigationProps} from '../../../App';
+import {OptionType} from '../../interface/appTypes';
+import RadioContainer from '../../components/RadioContainer/radioContainer';
+import {styles} from './styles';
 
 const QuestionsScreen = () => {
   const navigation = useNavigation<AppNavigationProps>();
@@ -95,49 +94,3 @@ const QuestionsScreen = () => {
 };
 
 export default QuestionsScreen;
-
-const styles = StyleSheet.create({
-  contentStyle: {
-    paddingHorizontal: 15,
-    flex: 1,
-    gap: 30,
-  },
-  container: {
-    flex: 1,
-    paddingHorizontal: 15,
-    gap: 90,
-
-    paddingVertical: 10,
-  },
-
-  questionContainer: {
-    flex: 1,
-    gap: 30,
-  },
-  questionCard: {
-    backgroundColor: colors.white,
-    shadowColor: colors.black,
-    shadowOpacity: 0.3,
-    padding: 20,
-    elevation: 10,
-    borderRadius: 10,
-    shadowRadius: 10,
-    minHeight: height * 0.5,
-    gap: 40,
-  },
-  questionText: {
-    fontSize: 20,
-    fontWeight: '600',
-  },
-  optionsContainer: {
-    gap: 20,
-  },
-
-  btnStyle: {
-    backgroundColor: colors.primary,
-  },
-  questionTest: {
-    fontSize: 20,
-    fontWeight: '900',
-  },
-});

@@ -5,9 +5,9 @@ import {
   createStackNavigator,
 } from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
-import HomeScreen from './src/screens/homeScreen';
-import QuestionsScreen from './src/screens/questionsScreen';
-import ResultScreen from './src/screens/resultScreen';
+import HomeScreen from './src/screens/Home/homeScreen';
+import QuestionsScreen from './src/screens/Questions/questionsScreen';
+import ResultScreen from './src/screens/Result/resultScreen';
 
 export type AppStackParams = {
   HomeScreen: undefined;

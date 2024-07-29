@@ -43,13 +43,13 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.primary,
   },
   greenTextStyle: {
-    color: 'green',
+    color: colors.green,
   },
   redTextStyle: {
-    color: 'red',
+    color: colors.red,
   },
   yellowTextStyle: {
-    color: '#FFBF00',
+    color: colors.yellow,
   },
   riskTextStyle: {
     fontWeight: '900',

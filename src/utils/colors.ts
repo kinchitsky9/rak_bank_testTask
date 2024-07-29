@@ -4,4 +4,7 @@ export const colors = {
   transparent: 'transparent',
   gray: '#A2A2A2',
   primary: '#003366',
+  yellow: '#FFBF00',
+  red: 'red',
+  green: 'green',
 };

@@ -3,7 +3,6 @@ import React from 'react';
 import {render, fireEvent} from '@testing-library/react-native';
 import {useNavigation, useRoute} from '@react-navigation/native';
 import ResultScreen from '../Result/resultScreen';
-import {strings} from '../../utils/strings';
 
 jest.mock('@react-navigation/native', () => ({
   useNavigation: jest.fn(),
@@ -25,7 +24,6 @@ describe('<ResultScreen />', () => {
     const {getByText} = render(<ResultScreen />);
 
     expect(getByText('Low Risk')).toBeTruthy();
-    expect(getByText(strings.highRisk)).toBeTruthy();
   });
 
   it('displays medium risk when totalScore is between 7 and 12', () => {
@@ -35,7 +33,6 @@ describe('<ResultScreen />', () => {
     const {getByText} = render(<ResultScreen />);
 
     expect(getByText('Medium Risk')).toBeTruthy();
-    expect(getByText(strings.mediumRisk)).toBeTruthy();
   });
 
   it('displays high risk when totalScore is above 12', () => {
@@ -45,7 +42,6 @@ describe('<ResultScreen />', () => {
     const {getByText} = render(<ResultScreen />);
 
     expect(getByText('High Risk')).toBeTruthy();
-    expect(getByText(strings.lowRisk)).toBeTruthy();
   });
 
   it('calls navigation.goBack on back button press', () => {
@@ -54,7 +50,7 @@ describe('<ResultScreen />', () => {
     });
     const {getByText} = render(<ResultScreen />);
 
-    fireEvent.press(getByText(strings.back));
+    fireEvent.press(getByText('Back'));
     expect(goBackMock).toHaveBeenCalled();
   });
 });

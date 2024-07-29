@@ -3,7 +3,6 @@ import React from 'react';
 import {useRoute, useNavigation, RouteProp} from '@react-navigation/native';
 import {AppNavigationProps, AppStackParams} from '../../../App';
 import Button from '../../components/Button/button';
-import {colors} from '../../utils/colors';
 import {strings} from '../../utils/strings';
 import {styles} from './styles';
 type ResultRouteProps = RouteProp<AppStackParams, 'ResultScreen'>;

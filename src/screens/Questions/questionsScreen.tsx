@@ -1,7 +1,6 @@
-import {Dimensions, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, Text, View} from 'react-native';
 import React, {useMemo, useState} from 'react';
 import Button from '../../components/Button/button';
-import {colors} from '../../utils/colors';
 import {questionsData} from '../../assets';
 import {useNavigation} from '@react-navigation/native';
 import {AppNavigationProps} from '../../../App';

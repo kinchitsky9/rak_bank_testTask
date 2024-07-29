@@ -3,7 +3,6 @@ import React from 'react';
 import {useRoute, useNavigation, RouteProp} from '@react-navigation/native';
 import {AppNavigationProps, AppStackParams} from '../../../App';
 import Button from '../../components/Button/button';
-import {strings} from '../../utils/strings';
 import {styles} from './styles';
 type ResultRouteProps = RouteProp<AppStackParams, 'ResultScreen'>;
 
@@ -45,11 +44,11 @@ const ResultScreen = () => {
         </View>
         <View style={styles.descriptionContainer}>
           {isLowRisk ? (
-            <Text style={styles.descriptionText}>{strings.highRisk}</Text>
+            <Text style={styles.descriptionText}>'You have a low-risk score, showing a preference for conservative investment strategies. You prioritize stability and security, opting for lower returns in exchange for minimized risk. We’ll guide you to bank account options that suit your cautious investment approach.'</Text>
           ) : isMediumRisk ? (
-            <Text style={styles.descriptionText}>{strings.mediumRisk}</Text>
+            <Text style={styles.descriptionText}>'You have a medium-risk score, indicating a balanced approach to investing. You’re open to taking some risks for moderate returns while maintaining a level of security. We’ll recommend bank account options that match your balanced investment style.'</Text>
           ) : (
-            <Text style={styles.descriptionText}>{strings.lowRisk}</Text>
+            <Text style={styles.descriptionText}>'You have a high-risk score, indicating a preference for bold and aggressive investment strategies. This suggests you’re comfortable with higher volatility in pursuit of greater returns. We’ll guide you to bank account options that align with your adventurous investment approach.'</Text>
           )}
         </View>
       </View>
@@ -60,7 +59,7 @@ const ResultScreen = () => {
             navigation.goBack();
           }}
           style={styles.btnStyle}
-          title={strings.back}
+          title="Back"
         />
       </View>
     </SafeAreaView>

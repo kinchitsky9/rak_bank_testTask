@@ -21,11 +21,10 @@ const QuestionsScreen = () => {
   };
 
   const onRadioContainerPressed = (item: OptionType) => {
-    const selectedAnswerArray = [
-      ...selectedAnswers,
-      (selectedAnswers[currentQuestionIndex] = item),
-    ];
-    setSelectedAnswers(selectedAnswerArray);
+    setSelectedAnswers(prev => {
+      prev[currentQuestionIndex] = item;
+      return [...prev];
+    });
   };
 
   const onFinishPressed = () => {
